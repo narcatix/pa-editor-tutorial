@@ -1,10 +1,10 @@
 ## §1 👋 Introduction
 > *Montage of some cool Project Arrhythmia levels*
 
-This is Project Arrhythmia. A fun rhythm bullet-hell game in which all things beautiful are deadly. The game has a broad library of thousands of challenging, beautiful, and creative levels made by members of the community.
+This is Project Arrhythmia. A fun rhythm bullet-hell game in which all things beautiful are deadly. The game has a broad library of thousands of challenging, beautiful, and creative levels made by members of its community.
 > *The montage zooms out to show the levels are being previewed in the editor*
 
-One of the appealing features of this game is its robust level editor used to create all these levels.
+One of the appealing features of this game is its robust level editor used to create all of these levels.
 
 Whether you're a new or a returning creator and you want to learn how to make a Project Arrhythmia level like *this*, or *this*, or *this*, then you're in the right place.
 > *Recording of a level that will be created and finished in the tutorial*
@@ -20,32 +20,26 @@ Now, forget about N-Chan. Today *I* am your guide to the Project Arrhythmia edit
 ##### Song
 First things first, we need to choose what song to use for our level. For new creators I recommend going with something fairly short and simple at first.
 
-One important thing to note is that if you're planning to publish your level, make sure the song you're going to use is verified for use in Project Arrhythmia, otherwise it will be removed by moderators after being published. I will link information about this in the description.
+One important thing to note is that if you're planning to publish your level, make sure the song you're going to use is verified for Project Arrhythmia, otherwise it will be removed by moderators after being published. I will link information about this in the description.
 
 In this tutorial I will use [Sphero by Xtrullor](https://www.newgrounds.com/audio/listen/612751) which is verified and free to download. I linked the download page in the description.
 
 ##### Create
 To start creating we will need to make a new project. Open up the editor by selecting "Creation engine" in the main menu, then switch to the "Create level" tab on the sidebar.
 
-You will be asked to fill in a few fields:
-* Level name — An arbitrary name! Put anything you want here!
-* Song title — Name of the song you're using. Please get it right, otherwise the song artist will be sad.
-* Song artist — Name of the artists who made the song.
-* Audio file location — Path to the music file. It can be of .ogg, .mp3, and .wav audio formats, but .ogg is recommended.
-* Level artwork — An image of .jpg format. The dimensions must be less than or equal to 512 × 512 pixels.
-* Level background setup — different parallax background presets which are completely optional.
+You will be asked to fill in a few fields with information about the song and your level. Make sure to get them right, otherwise the song artist will be upset, and we don't upset artists in Project Arrhythmia.
+* I will give this level a title, which will be "My first level". This can be anything you want to call it.
+* For **Song Title**—since I'm using Sphero made by Xtrullor—I'll put "Sphero", because that is the title of the song, obviously.
+* The **Song Artist** is "Xtrullor".
+* Audio file location — here you click Browse and choose the song file. Sphero.mp3. Now, you *can* use files of .ogg, .mp3, and .wav audio formats, but they will all be transcoded into .ogg at the end of the day. Also do note that the editor is a bit quirky with some .mp3 files and might not create the project properly, in which case you'll have to use a different file format.
+* Level artwork — this is where you select a level icon. The icon should be a .jpg image no bigger than 512 pixels squared. I will leave it blank for now, you can always set it later.
+* Level background setup lets you create a level with a preset of backgrounds which are purely visual. I will leave this one default too.
 
 Click the "Create new level" button, and a new empty project will be created!
 
-##### Save
-It is important to remember to periodically save your progress. You can do so by clicking on **File** on the menubar at the top, and clicking "Save Level" from the dropdown list. You can also save the level quickly by using the save keyboard shortcut with keys Ctrl and S. Project Arrhythmia automatically saves a backup of your level periodically. Those will be discussed in **p16 Scripting and File Editing**.
-
-##### Load
-When it is time to come back to working on a level after a nice break, you can always open the level project from the welcome screen by finding it in "Recent Levels" section in the "Home" tab, or in the "Open level" tab.
-
 ## §3 🖼 Overview
 ![(Editor interface overview)](assets/overview.png)<br>
-Now that we have a project opened, let's take a look at its interface. It is divided into multiple distinct windows:
+Now that we have a project opened, let's take a look at the main interface of the editor. It is divided into multiple distinct windows:
 * **Level Preview**. Shows you how your level looks at a currently chosen position in the timeline. You can click on shapes here to select their objects.
 * Below the level preview window is the **Control Bar**. From left to right there are controls that allow you to
 	* play and pause the level,
@@ -53,10 +47,16 @@ Now that we have a project opened, let's take a look at its interface. It is div
 	* change the speed of playback in the editor,
 	* switch between the currently displayed timeline tabs,
 	* create new gameplay elements,
-	* and toggle fullscreen preview mode.
+	* and toggle full-screen preview mode.
 * Below the control bar, spanning the entire bottom half of the editor is the **Timeline**. This is where you can see objects placed in your level. The further along the timeline they are, the later they appear in the level. They can be selected and dragged through time here. This is also where you can quickly change the time of preview by dragging the blue timeline scrubber.
 * **Contextual Editing Panel**. This panel lets you change properties of objects, animation keyframes, the entire level, or any other element that can be edited.
 * And lastly, **Menu Bar**. It contains a set of actions that affect either the entire level, or the editing process.
+
+##### Save
+It is important to remember to periodically save your progress. You can do so by clicking on **File** on the menubar at the top, and clicking "Save Level" from the drop-down list. You can also save the level quickly by using the save keyboard shortcut with keys Ctrl and S. Project Arrhythmia automatically saves a backup of your level periodically. Those will be discussed in [§16 💾 Scripts and File Editing](#16--scripts-and-file-editing).
+
+##### Load
+When it is time to come back to working on a level after a nice break, you can always open the level project from the welcome screen by finding it in "Recent Levels" section in the "Home" tab, or in the "Open level" tab.
 
 ## §4 📦 Objects
 Objects are the most essential part of the gameplay and decorations of a level. They appear as a shape and an be animated.
