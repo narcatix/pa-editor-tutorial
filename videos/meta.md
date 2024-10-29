@@ -2,14 +2,14 @@
 Main title is `PA Editor Explained`
 | Append to Title                     | Thumbnail Text                    | Included Chapters |
 |-------------------------------------|-----------------------------------|-------------------|
-| #1 \| Getting Started               | It's not scary                    | 1-4               |
-| #2 \| Objects                       | Everything about objects          | 5                 |
-| #3 \| Animation and Random          | Keyframes                         | 6                 |
-| #4 \| Prefabs                       | Prefabs and Quick Spawn           | 7                 |
-| \| Break time                       | Touching grass                    | 8                 |
-| #5 \| Parenting                     | Object parenting                  | 9                 |
-| #6 \| Effects & Checkpoints         | Make your level shine             | 10                |
-| #7 \| Themes & Parallax             | More colours                      | 11                |
+| #1 \| Getting Started               | It's not scary                    | 1-3               |
+| #2 \| Objects                       | Everything about objects          | 4                 |
+| #3 \| Animation and Random          | Keyframes                         | 5                 |
+| #4 \| Prefabs                       | Prefabs and Quick Spawn           | 6                 |
+| \| Break time                       | Touching grass                    | 7                 |
+| #5 \| Parenting                     | Object parenting                  | 8                 |
+| #6 \| Effects & Checkpoints         | Make your level shine             | 9                 |
+| #7 \| Themes & Parallax             | More colours                      | 10                |
 
 ## ⚠ Fully Outdated Notice
 Every video should include this in the beginning and have it cut using the YouTube Studio editor.

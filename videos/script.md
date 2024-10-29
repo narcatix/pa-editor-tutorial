@@ -57,7 +57,7 @@ Some properties like position, scale, rotation, and colour have their own animat
 By the way, don't worry about all the other properties yet. In this video I'm only going over the main interface of the editor.
 
 ##### Timeline
-Next thing I'm gonna show you is the **Timeline** that spans the entire bottom half of the editor. The timeline is where we can see the representation of all the gameplay objects in the level placed at specific points in time, which we only have one of right now. I can click on an object in this window and that will select it just like clicking on its shapes in the Level Preview did.
+Next thing I'm gonna show you is the **Timeline** that spans the entire bottom half of the editor. The timeline is where we can see the representation of all the gameplay objects in the level placed at specific points in time, which we only have one of right now. I can click on an object in this window and that will select it just like clicking on its shape in the Level Preview did.
 
 If I click play on the Control Bar you will see the blue handle starts moving to the right, indicating that the time is advancing. We call this blue handle a "Scrubber". By the way, the shortcut to play or pause the level is Spacebar.
 
@@ -69,7 +69,7 @@ Now, let's come back to the four special properties of gameplay objects. Did you
 
 As you can see, there are two "move" keyframes. I can click on one to start editing its values in the top-right portion of the window. The first keyframe defines position X 0 Y 0, which is the middle centre, and the second keyframe defines position X 10 Y 0, which is just to the right of that. Let's edit its position to be X 10 Y 10 and play the level. As you can see, the object is now moving diagonally from the centre.
 
-Just so you know, Project Arrhythmia coordinates have X positive going right and Y positive going up.
+Just so you know, Project Arrhythmia coordinates have positive X going right and positive Y going up.
 
 I can zoom in and out both of the timelines using the shortcuts Ctrl+\[+\] and Ctrl+\[-\], create new keyframes by clicking with the right mouse button on an empty space, and delete keyframes by having them selected and using the Delete key.
 
@@ -78,7 +78,7 @@ Another fun way to create a new keyframe is clicking and dragging the object aro
 There are 4 dragging modes that can be used with 4 keyboard keys: W for position mode, E for scale mode, R for rotation mode, and T for colour mode.
 
 ##### Control Bar
-So now you know how to work with one gameplay object, but there's only so much you can do with just that, so let's create another one. For that I will use the **Control Bar** which is situated right below the Preview Window. The Control Bar lets you do things like control playback, change the timeline layer, and create new objects. So to create a new object I simply click on the button that says "Object", and here it is, in the middle-centre of the preview. It's so small, let's make it bigger by changing the drag mode to "size" with E, and dragging from it in the preview.
+So now you know how to work with one gameplay object, but there's only so much you can do with just that, so let's create another one. For that I will use the **Control Bar** which is situated right below the Preview Window. The Control Bar lets you do things like control playback, change the timeline layer, and create new objects. So to create a new gameplay object I simply click on the button that says "Object", and here it is, in the middle-centre of the preview. It's so small, let's make it bigger by changing the drag mode to "size" with E, and dragging from it in the preview.
 
 If I want to delete an object I would select it either by clicking on it on the timeline or on its shape in the preview, and using the Delete key.
 
@@ -93,13 +93,12 @@ When it is time to come back to working on a level after a nice break, you can a
 ##### Getting Help
 Lastly, I just want to say that if you find any of this very difficult—don't worry. Level creation has a bit of a learning curve and you're right at the beginning, so if you keep going, you will quickly get over the initial struggle. You can also ask for help in the comments, Steam Discussion forums, or in the official Project Arrhythmia Discord server, people will gladly help you there.
 
-## §4 📦 Objects
-Objects are the most essential part of the gameplay and decorations of a level. They appear as a shape and an be animated.
+## §4 📦 Gameplay Objects
+Now that you know how to navigate the editor, let's begin creating something more interesting. And to do that we will start with a gameplay object, because they're the most essential part of the gameplay and decorations of any level. As you already know, they appear as a shape and can be animated.
 
-I'll create a new object by clicking on the "Object" button on the control bar. I can also create one from the presets if I use the Object control bar popup.
-As you can see I now have an object placed on the timeline, represented by a rectangle. Its horizontal position indicates when the object starts and stops, which means that if I move the blue timeline scrubber to overlap with the rectangle you'll se it on the preview. I can click and drag the rectangle around the timeline and it will change its start time.
+I'll create a new object by clicking on the "Object" button on the control bar. I could also create one from presets available in the little pop-up, but I never find myself actually using it.
 
-If I want to edit the object (i.e. change its shape, when it starts and ends, its transformation and colour) I'd have to select it by either clicking on it on the timeline, or in the preview. When I have an object selected you'll see the Object Properties panel show up to the right of the preview
+If I want to edit the object, I'd have to select it by either clicking on it on the timeline, or in the preview. When I have an object selected you'll see the Object Properties panel show up to the right of the preview
 Objects have these properties that I can edit:
 * Name — A name, which is just to help me keep track of the object on the timeline. I can call this one 'Hello PA', and you will see this object's name update there.
 * Colour coding — Six toggles that also help identify objects on the timeline by changing how they appear there. Having multiple of them toggled will mix the colour. I can toggle the Blue and Red empty toggles and you will see the rectangle on the timeline is now purple.
@@ -108,7 +107,7 @@ Objects have these properties that I can edit:
 	* No hit — The object will never hit players. It is used for decorations.
 	* and empty — The object will be invisible. It is used for parenting, which will be discussed in a later video.
 Next property is
-* Start Time — Lets me control when the object appears and starts animating, measured in seconds relative to song start. It's the same as moving the object around on th etimeline, but you can set a precise time here.
+* Start Time — Lets me control when the object appears and starts animating, measured in seconds relative to song start. It's the same as moving the object around on the timeline, but you can set a precise time here.
 * End Time — Tells the game when the object is no longer needed, making the object disappear and helping reduce lag. It has the following options:
 	* Last Keyframe — The object will disappear immediately as its last animation keyframe is reached. Animation will be discussed in a separate video.
 	* Last Keyframe + Offset — The object will disappear when the provided amount of time in seconds has passed after its last keyframe. So if this object's animation lasts 5 seconds, and the End Time is set to be Last Keyframe + Offset with the value 3, then the object will disappear 9 seconds after Start Time.
@@ -129,7 +128,7 @@ If I want to delete an object, I can do that by selecting it, and either clickin
 ### Practice example
 Now let's have a practice example! During practice examples I will be showing you how to use the information we have learned to make something cool.
 
-Let's make a very simple projerctile arrow using two objects.
+Let's make a very simple projectile arrow using two objects.
 I am going to use a triangle shape for the arrow head and a rectangle shape for a shaft.
 - I will go ahead and create the first object by clicking on the 'Object' control bar button.
 	- I now have a new object placed on the timeline. I will drag the timeline scrubber to overlap with the object so I can see what it looks like in the preview. I want to edit this object, so I will select it by clicking on it on the timeline, which brings up the Object Properties panel.
