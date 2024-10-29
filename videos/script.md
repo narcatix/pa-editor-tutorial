@@ -33,30 +33,65 @@ You will be asked to fill in a few fields with information about the song and yo
 * The **Song Artist** is "Xtrullor".
 * Audio file location — here you click Browse and choose the song file. Sphero.mp3. Now, you *can* use files of .ogg, .mp3, and .wav audio formats, but they will all be transcoded into .ogg at the end of the day. Also do note that the editor is a bit quirky with some .mp3 files and might not create the project properly, in which case you'll have to use a different file format.
 * Level artwork — this is where you select a level icon. The icon should be a .jpg image no bigger than 512 pixels squared. I will leave it blank for now, you can always set it later.
-* Level background setup lets you create a level with a preset of backgrounds which are purely visual. I will leave this one default too.
+* Level background setup lets you create a level with a preset of backgrounds which are purely visual. I will select "City" because I think it's pretty.
 
-Click the "Create new level" button, and a new empty project will be created!
+Click the "Create new level" button, a new empty project is created, let's pause the playback... and welcome to the editor.
 
 ## §3 🖼 Overview
 ![(Editor interface overview)](assets/overview.png)<br>
-Now that we have a project opened, let's take a look at the main interface of the editor. It is divided into multiple distinct windows:
-* **Level Preview**. Shows you how your level looks at a currently chosen position in the timeline. You can click on shapes here to select their objects.
-* Below the level preview window is the **Control Bar**. From left to right there are controls that allow you to
-	* play and pause the level,
-	* set your preview time in the level precisely,
-	* change the speed of playback in the editor,
-	* switch between the currently displayed timeline tabs,
-	* create new gameplay elements,
-	* and toggle full-screen preview mode.
-* Below the control bar, spanning the entire bottom half of the editor is the **Timeline**. This is where you can see objects placed in your level. The further along the timeline they are, the later they appear in the level. They can be selected and dragged through time here. This is also where you can quickly change the time of preview by dragging the blue timeline scrubber.
-* **Contextual Editing Panel**. This panel lets you change properties of objects, animation keyframes, the entire level, or any other element that can be edited.
-* And lastly, **Menu Bar**. It contains a set of actions that affect either the entire level, or the editing process.
+##### Editor Interface
+Now that we have a project loaded, let's take a look at the main interface of the editor. It is divided into multiple distinct windows.
 
-##### Save
-It is important to remember to periodically save your progress. You can do so by clicking on **File** on the menubar at the top, and clicking "Save Level" from the drop-down list. You can also save the level quickly by using the save keyboard shortcut with keys Ctrl and S. Project Arrhythmia automatically saves a backup of your level periodically. Those will be discussed in [§16 💾 Scripts and File Editing](#16--scripts-and-file-editing).
+##### Level Preview
+So, this big view on the top-left is the **Level Preview**. This is where you can see how your level looks at any given time and this is what the players will see when playing your level. Now, you can control the current time of the preview by dragging around the blue handle at the bottom like this.
 
-##### Load
+I'll drag it all the way to the very beginning and you can see there is a red square shape moving around on the preview while I'm doing that. That is a gameplay object. I can click on its shape to select it.
+
+##### Property Editor
+Now, what if I wanted this shape to be a circle? I can do that by using the **Property Editor** window to the right of our Level Preview. This window is different depending on what you have currently selected. If I select any of the dark squares—which are background or "parallax" objects, by the way—the property window will show properties specifically for parallax objects.
+
+So if I want to change the shape of the gameplay object I will select it, go over to the "Shape / Gradient" section, and click on one of the 6 shape categories, for example, a circle.
+
+Some properties like position, scale, rotation, and colour have their own animation timeline which is shown at the bottom of this window, which we will get back to in a minute.
+
+By the way, don't worry about all the other properties yet. In this video I'm only going over the main interface of the editor.
+
+##### Timeline
+Next thing I'm gonna show you is the **Timeline** that spans the entire bottom half of the editor. The timeline is where we can see the representation of all the gameplay objects in the level placed at specific points in time, which we only have one of right now. I can click on an object in this window and that will select it just like clicking on its shapes in the Level Preview did.
+
+If I click play on the Control Bar you will see the blue handle starts moving to the right, indicating that the time is advancing. We call this blue handle a "Scrubber". By the way, the shortcut to play or pause the level is Spacebar.
+
+The length of the objects on the timeline represents how long they appear on the screen for. If the scrubber is on top of an object, that means that object exists at the current time. I can change the time an object appears by dragging it around the timeline.
+I can hold shift while dragging to move an object up and down, but it doesn't change anything about the actual level, just makes it easier to organise your objects later on.
+
+##### Property Editor (Keyframes)
+Now, let's come back to the four special properties of gameplay objects. Did you notice that our object has an animation where it slowly moves to the right? So why is that? If I select the object and look at its animation timeline... aaAAaah... There we have a line labelled "Move" with two funny diamond shapes on it. These diamonds are what we call "Keyframes" and they define specific values to transition between.
+
+As you can see, there are two "move" keyframes. I can click on one to start editing its values in the top-right portion of the window. The first keyframe defines position X 0 Y 0, which is the middle centre, and the second keyframe defines position X 10 Y 0, which is just to the right of that. Let's edit its position to be X 10 Y 10 and play the level. As you can see, the object is now moving diagonally from the centre.
+
+Just so you know, Project Arrhythmia coordinates have X positive going right and Y positive going up.
+
+I can zoom in and out both of the timelines using the shortcuts Ctrl+\[+\] and Ctrl+\[-\], create new keyframes by clicking with the right mouse button on an empty space, and delete keyframes by having them selected and using the Delete key.
+
+Another fun way to create a new keyframe is clicking and dragging the object around right in the level preview! That will immediately create a new keyframe at the position of the scrubber, or update it if there is one already.
+
+There are 4 dragging modes that can be used with 4 keyboard keys: W for position mode, E for scale mode, R for rotation mode, and T for colour mode.
+
+##### Control Bar
+So now you know how to work with one gameplay object, but there's only so much you can do with just that, so let's create another one. For that I will use the **Control Bar** which is situated right below the Preview Window. The Control Bar lets you do things like control playback, change the timeline layer, and create new objects. So to create a new object I simply click on the button that says "Object", and here it is, in the middle-centre of the preview. It's so small, let's make it bigger by changing the drag mode to "size" with E, and dragging from it in the preview.
+
+If I want to delete an object I would select it either by clicking on it on the timeline or on its shape in the preview, and using the Delete key.
+
+##### Menu Bar
+Let's say I want to save my project. For that I would use the **Menu Bar** at the very top of the editor. I click "File" and then "Save Level", or simply use the Ctrl+S shortcut. You can see the list of other useful shortcuts under "Help", "Key Shortcuts".
+
+It is important to remember to save your progress often, as Project Arrhythmia is still in Early Access and has some bugs that could cause crashes.
+The game also saves a backup of your level periodically, and those will be discussed in [§16 💾 Scripts and File Editing](#16--scripts-and-file-editing).
+
 When it is time to come back to working on a level after a nice break, you can always open the level project from the welcome screen by finding it in "Recent Levels" section in the "Home" tab, or in the "Open level" tab.
+
+##### Getting Help
+Lastly, I just want to say that if you find any of this very difficult—don't worry. Level creation has a bit of a learning curve and you're right at the beginning, so if you keep going, you will quickly get over the initial struggle. You can also ask for help in the comments, Steam Discussion forums, or in the official Project Arrhythmia Discord server, people will gladly help you there.
 
 ## §4 📦 Objects
 Objects are the most essential part of the gameplay and decorations of a level. They appear as a shape and an be animated.
