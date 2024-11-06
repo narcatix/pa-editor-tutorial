@@ -75,7 +75,7 @@ I can zoom in and out both of the timelines using the shortcuts Ctrl+\[+\] and C
 
 Another fun way to create a new keyframe is clicking and dragging the object around right in the level preview! That will immediately create a new keyframe at the position of the scrubber, or update it if there is one already.
 
-There are 4 dragging modes that can be used with 4 keyboard keys: W for position mode, E for scale mode, R for rotation mode, and T for colour mode.
+There are 4 dragging modes that can be used with 4 keyboard keys: W for position mode, E for scale mode, R for rotation mode, and T for colour mode. Your current dragging mode is displayed at the top-right corner of the level preview.
 
 ##### Control Bar
 So now you know how to work with one gameplay object, but there's only so much you can do with just that, so let's create another one. For that I will use the **Control Bar** which is situated right below the Preview Window. The Control Bar lets you do things like control playback, change the timeline layer, and create new objects. So to create a new gameplay object I simply click on the button that says "Object", and here it is, in the middle-centre of the preview. It's so small, let's make it bigger by changing the drag mode to "size" with E, and dragging from it in the preview.
@@ -94,11 +94,19 @@ When it is time to come back to working on a level after a nice break, you can a
 Lastly, I just want to say that if you find any of this very difficult—don't worry. Level creation has a bit of a learning curve and you're right at the beginning, so if you keep going, you will quickly get over the initial struggle. You can also ask for help in the comments, Steam Discussion forums, or in the official Project Arrhythmia Discord server, people will gladly help you there.
 
 ## §4 📦 Gameplay Objects
-Now that you know how to navigate the editor, let's begin creating something more interesting. And to do that we will start with a gameplay object, because they're the most essential part of the gameplay and decorations of any level. As you already know, they appear as a shape and can be animated.
+Now that you know how to navigate around the editor, let's begin creating something more interesting. And to do that we will start with a gameplay object, because they're the most essential part of gameplay and decorations of any level.
 
-I'll create a new object by clicking on the "Object" button on the control bar. I could also create one from presets available in the little pop-up, but I never find myself actually using it.
+##### Spinner Attack
+Let's play the the music from the beginning and think of what attack could go here...
 
-If I want to edit the object, I'd have to select it by either clicking on it on the timeline, or in the preview. When I have an object selected you'll see the Object Properties panel show up to the right of the preview
+> *Synth waaaa...wa, wa, waaa~ type sound*
+
+Sounds like something spinning to me, and I think I can visualise a spinner attack that could go here. It looks like a circle that is spinning and changing direction to the wawawa sound.
+I'll create a new object by clicking on the "Object" button on the control bar. I could also create one with these presets in the little pop-up, but I never find myself actually using it.
+
+**!!!** This part was written without the editor access. Review this section with the editor later!
+
+
 Objects have these properties that I can edit:
 * Name — A name, which is just to help me keep track of the object on the timeline. I can call this one 'Hello PA', and you will see this object's name update there.
 * Colour coding — Six toggles that also help identify objects on the timeline by changing how they appear there. Having multiple of them toggled will mix the colour. I can toggle the Blue and Red empty toggles and you will see the rectangle on the timeline is now purple.
