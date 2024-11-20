@@ -57,15 +57,15 @@ Some properties like position, scale, rotation, and colour have their own animat
 By the way, don't worry about all the other properties yet. In this video I'm only going over the main interface of the editor.
 
 ##### Timeline
-Next thing I'm gonna show you is the **Timeline** that spans the entire bottom half of the editor. The timeline is where we can see the representation of all the gameplay objects in the level placed at specific points in time, which we only have one of right now. I can click on an object in this window and that will select it just like clicking on its shape in the Level Preview did.
+Next thing I'm gonna show you is the **Timeline** that spans the entire bottom half of the editor. The timeline is where we can see the representation of all the gameplay objects in the level placed at specific points in time, shown as **Object Labels**, which we only have one of right now. I can click on a label in this window and that will select the object just like clicking on its shape in the Level Preview did.
 
 If I click play on the Control Bar you will see the blue handle starts moving to the right, indicating that the time is advancing. We call this blue handle a "Scrubber". By the way, the shortcut to play or pause the level is Spacebar.
 
-The length of the objects on the timeline represents how long they appear on the screen for. If the scrubber is on top of an object, that means that object exists at the current time. I can change the time an object appears by dragging it around the timeline.
-I can hold shift while dragging to move an object up and down, but it doesn't change anything about the actual level, just makes it easier to organise your objects later on.
+The length of the label on the timeline represents how long the object appears on the screen for. If the scrubber is on top of a label, that means that object exists at the current time. I can change the time of appearance by dragging the label around the timeline.
+I can hold shift while dragging to move the label up and down, but it doesn't change anything about the actual level, just makes it easier to organise your labels later on.
 
 ##### Property Editor (Keyframes)
-Now, let's come back to the four special properties of gameplay objects. Did you notice that our object has an animation where it slowly moves to the right? So why is that? If I select the object and look at its animation timeline... aaAAaah... There we have a line labelled "Move" with two funny diamond shapes on it. These diamonds are what we call "Keyframes" and they define specific values to transition between.
+Now, let's come back to the four special properties of gameplay objects. Did you notice that our object has an animation where it slowly moves to the right? So why is that? If I select the object and look at its animation timeline... *aaAAaah*... There we have a line labelled "Move" with two funny diamond shapes on it. These diamonds are what we call "Keyframes" and they define specific values to transition between.
 
 As you can see, there are two "move" keyframes. I can click on one to start editing its values in the top-right portion of the window. The first keyframe defines position X 0 Y 0, which is the middle centre, and the second keyframe defines position X 10 Y 0, which is just to the right of that. Let's edit its position to be X 10 Y 10 and play the level. As you can see, the object is now moving diagonally from the centre.
 
@@ -73,14 +73,14 @@ Just so you know, Project Arrhythmia coordinates have positive X going right and
 
 I can zoom in and out both of the timelines using the shortcuts Ctrl+\[+\] and Ctrl+\[-\], create new keyframes by clicking with the right mouse button on an empty space, and delete keyframes by having them selected and using the Delete key.
 
-Another fun way to create a new keyframe is clicking and dragging the object around right in the level preview! That will immediately create a new keyframe at the position of the scrubber, or update it if there is one already.
+Another fun way to create a new keyframe is by clicking and dragging the object around right in the level preview! That will immediately create a new keyframe at the position of the scrubber, or update it if there is one already.
 
 There are 4 dragging modes that can be used with 4 keyboard keys: W for position mode, E for scale mode, R for rotation mode, and T for colour mode. Your current dragging mode is displayed at the top-right corner of the level preview.
 
 ##### Control Bar
 So now you know how to work with one gameplay object, but there's only so much you can do with just that, so let's create another one. For that I will use the **Control Bar** which is situated right below the Preview Window. The Control Bar lets you do things like control playback, change the timeline layer, and create new objects. So to create a new gameplay object I simply click on the button that says "Object", and here it is, in the middle-centre of the preview. It's so small, let's make it bigger by changing the drag mode to "size" with E, and dragging from it in the preview.
 
-If I want to delete an object I would select it either by clicking on it on the timeline or on its shape in the preview, and using the Delete key.
+If I want to delete an object I would select it either by clicking on it on its label on the timeline or its shape in the preview, and using the Delete key.
 
 ##### Menu Bar
 Let's say I want to save my project. For that I would use the **Menu Bar** at the very top of the editor. I click "File" and then "Save Level", or simply use the Ctrl+S shortcut. You can see the list of other useful shortcuts under "Help", "Key Shortcuts".
@@ -101,11 +101,27 @@ Let's play the the music from the beginning and think of what attack could go he
 
 > *Synth waaaa...wa, wa, waaa~ type sound*
 
-Sounds like something spinning to me, and I think I can visualise a spinner attack that could go here. It looks like a circle that is spinning and changing direction to the wawawa sound.
+Sounds like something spinning to me, and I think I can visualise a spinner attack that could go here. It looks like an eighth of a circle that is spinning and changing direction to the wawawa sound.
 I'll create a new object by clicking on the "Object" button on the control bar. I could also create one with these presets in the little pop-up, but I never find myself actually using it.
 
 **!!!** This part was written without the editor access. Review this section with the editor later!
 
+Let's go through what all of these options mean together, and change some of them.
+* At the very top above the name we have 6 **colour coding** toggles. These change how objects are coloured on the timeline, purely for editing purposes. The toggles are additive, so if I have the Blue and Red ones on, the colour on the timeline changes to Purple.
+* Next one is the **Name**, which, once again, just changes the label of the object. I'll call it "Spinner circle attack" and you can see the label change to reflect that.
+* The next property is **Object Type**. That's what determines the function of the object. There are three types to choose from:
+	* Hit - The object will hit players on collision, if fully opaque. It is used for obstacles.
+	* No hit - The object will never hit players. It is used for decorations.
+	* and Empty - the object will be invisible. It is used for parenting, which will be discussed in a later video.
+We want this attack to hit the player, so I will leave it set to Hit.
+* Next up we have **Start Time**, which is the same as dragging object's label left or right, but you work with precise time in secounds here.
+* Then comes the **End Time**. This is what tells the game when the object is no longer needed, making it disappear and helping reduce lag. I like changing this last so we will come back to that later.
+* **Parenting** lets this object inherit certain properties of another object. This is a very important and complex subject so it will have its own video in the series.
+* **Gradient
+
+\-\-\- Return to End Time \-\-\-
+
+\-\-\- old stuff \-\-\-
 
 Objects have these properties that I can edit:
 * Name — A name, which is just to help me keep track of the object on the timeline. I can call this one 'Hello PA', and you will see this object's name update there.

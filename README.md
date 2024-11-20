@@ -31,7 +31,8 @@ Script editing guidelines:
 	- "User" must refer to the user of the editor
 	- "Players" must refer to potential people playing user's level, and always pluralised
 	- "Nanobot" must refer to characters that players control
-	- "Objects" are more abstract, while "Shape" is a visual representation of an object
+	- "Gameplay Object" is more abstract, while "Shape" is a visual representation of a gameplay object in the level
+	- "Object Label" is a visual representation of the object on the timeline
 - Avoid giving ideas of location by referring to the video. Assume the user is only able to listen to narration.
 - Follow the writing tone
 	- Helpful
