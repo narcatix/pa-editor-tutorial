@@ -3,8 +3,6 @@
 > ## ⚠ Disclaimer!
 > 👋 Hi! My name is **catix**, and I'm an internet cat! 🐈 And this is my little project. It is a work in progress and not even close to being finished.
 > 
-> 😔 I am dyslexic and have some other issues that get in the way of working on this, so you should expect misspealt words and weird wording.
-> 
 > ❤ You are free to use materials in this repository to guide people asking quesitons about the editor. Contributions are more than welcome!
 > 
 > Thank you,
