@@ -1,33 +1,33 @@
-## §1 👋 Introduction
+## 👋 Introduction
 > *Montage of some cool Project Arrhythmia levels*
 
 This is Project Arrhythmia. A fun rhythm bullet-hell game in which all things beautiful are deadly. The game has a broad library of thousands of challenging, beautiful, and creative levels made by members of its community.
 > *The montage zooms out to show the levels are being previewed in the editor*
 
-One of the appealing features of this game is its robust level editor used to create all of these levels.
+One of the appealing features of this game is its robust level editor used to create all these levels.
 
 Whether you're a new or a returning creator and you want to learn how to make a Project Arrhythmia level like *this*, or *this*, or *this*, then you're in the right place.
 > *Recording of a level that will be created and finished in the tutorial*
 
 In this tutorial I will explain the basics, walk you through creating this simple level you see on the screen, and by the end you will have enough knowledge to start making and publishing your own creative levels.
 
-In every video there are useful links and update notes in the description, and the videos have captions available.
+You may find useful links and update notes in the description of every video, also every video has captions available.
 
 Now, forget about N-Chan. Today *I* am your guide to the Project Arrhythmia editor...
 
-## §2 🚧 Making a New Project
+## 🚧 Making a New Project
 ![(Level creation screen screenshot)](assets/welcome-create-level.png)<br>
 ##### Song
 First things first, we need to choose what song to use for our level. For new creators I recommend going with something fairly short and simple at first.
 
 One important thing to note is that if you're planning to publish your level, make sure the song you're going to use is verified for Project Arrhythmia, otherwise it will be removed by moderators after being published. I will link information about this in the description.
 
-In this tutorial I will use [Sphero by Xtrullor](https://www.newgrounds.com/audio/listen/612751) which is verified and free to download. I linked the download page in the description.
+In this tutorial I will be using [Sphero by Xtrullor](https://www.newgrounds.com/audio/listen/612751) which is verified and free to download. I linked the download page in the description.
 
 ##### Create
 To start creating we will need to make a new project. Open up the editor by selecting "Creation engine" in the main menu, then switch to the "Create level" tab on the sidebar.
 
-You will be asked to fill in a few fields with information about the song and your level. Make sure to get them right, otherwise the song artist will be upset, and we don't upset artists in Project Arrhythmia.
+You will be asked to fill in a few fields with information about the song and your level. Make sure to get them right, otherwise the song artist will be sad, and we don't make artists sad in Project Arrhythmia.
 * I will give this level a title, which will be "My first level". This can be anything you want to call it.
 * For **Song Title**—since I'm using Sphero made by Xtrullor—I'll put "Sphero", because that is the title of the song, obviously.
 * The **Song Artist** is "Xtrullor".
@@ -35,22 +35,22 @@ You will be asked to fill in a few fields with information about the song and yo
 * Level artwork — this is where you select a level icon. The icon should be a .jpg image no bigger than 512 pixels squared. I will leave it blank for now, you can always set it later.
 * Level background setup lets you create a level with a preset of backgrounds which are purely visual. I will select "City" because I think it's pretty.
 
-Click the "Create new level" button, a new empty project is created, let's pause the playback... and welcome to the editor.
+Click the "Create new level" button. And a new empty project is created. Let's pause the playback, and welcome to the editor!
 
-## §3 🖼 Overview
+## 🖼 Overview
 ![(Editor interface overview)](assets/overview.png)<br>
 ##### Editor Interface
 Now that we have a project loaded, let's take a look at the main interface of the editor. It is divided into multiple distinct windows.
 
 ##### Level Preview
-So, this big view on the top-left is the **Level Preview**. This is where you can see how your level looks at any given time and this is what the players will see when playing your level. Now, you can control the current time of the preview by dragging around the blue handle at the bottom like this.
+So, this big view on the top-left is the **Level Preview**. This is where you can see how your level looks at any given time and this is what the players will see when playing your level. You can control the current time of the preview by dragging around the blue handle at the bottom like this.
 
 I'll drag it all the way to the very beginning and you can see there is a red square shape moving around on the preview while I'm doing that. That is a gameplay object. I can click on its shape to select it.
 
 ##### Property Editor
 Now, what if I wanted this shape to be a circle? I can do that by using the **Property Editor** window to the right of our Level Preview. This window is different depending on what you have currently selected. If I select any of the dark squares—which are background or "parallax" objects, by the way—the property window will show properties specifically for parallax objects.
 
-So if I want to change the shape of the gameplay object I will select it, go over to the "Shape / Gradient" section, and click on one of the 6 shape categories, for example, a circle.
+So if I want to change the shape of the gameplay object I will select it by clicking on it, go over to the "Shape / Gradient" section, click on one of the 6 shape categories, for example, a circle, and choose a simple circle from the pop-out.
 
 Some properties like position, scale, rotation, and colour have their own animation timeline which is shown at the bottom of this window, which we will get back to in a minute.
 
@@ -69,7 +69,9 @@ Now, let's come back to the four special properties of gameplay objects. Did you
 
 As you can see, there are two "move" keyframes. I can click on one to start editing its values in the top-right portion of the window. The first keyframe defines position X 0 Y 0, which is the middle centre, and the second keyframe defines position X 10 Y 0, which is just to the right of that. Let's edit its position to be X 10 Y 10 and play the level. As you can see, the object is now moving diagonally from the centre.
 
-Just so you know, Project Arrhythmia coordinates have positive X going right and positive Y going up.
+Just so you know, Project Arrhythmia coordinates go X right and Y up.
+
+I can change the timing of keyframes by selecting and dragging them left or right, or by modifying their Time property.
 
 I can zoom in and out both of the timelines using the shortcuts Ctrl+\[+\] and Ctrl+\[-\], create new keyframes by clicking with the right mouse button on an empty space, and delete keyframes by having them selected and using the Delete key.
 
@@ -80,7 +82,7 @@ There are 4 dragging modes that can be used with 4 keyboard keys: W for position
 ##### Control Bar
 So now you know how to work with one gameplay object, but there's only so much you can do with just that, so let's create another one. For that I will use the **Control Bar** which is situated right below the Preview Window. The Control Bar lets you do things like control playback, change the timeline layer, and create new objects. So to create a new gameplay object I simply click on the button that says "Object", and here it is, in the middle-centre of the preview. It's so small, let's make it bigger by changing the drag mode to "size" with E, and dragging from it in the preview.
 
-If I want to delete an object I would select it either by clicking on it on its label on the timeline or its shape in the preview, and using the Delete key.
+If I want to delete an object I would select it either by clicking on its label on the timeline or its shape in the preview, and using the Delete key.
 
 ##### Menu Bar
 Let's say I want to save my project. For that I would use the **Menu Bar** at the very top of the editor. I click "File" and then "Save Level", or simply use the Ctrl+S shortcut. You can see the list of other useful shortcuts under "Help", "Key Shortcuts".
@@ -93,155 +95,108 @@ When it is time to come back to working on a level after a nice break, you can a
 ##### Getting Help
 Lastly, I just want to say that if you find any of this very difficult—don't worry. Level creation has a bit of a learning curve and you're right at the beginning, so if you keep going, you will quickly get over the initial struggle. You can also ask for help in the comments, Steam Discussion forums, or in the official Project Arrhythmia Discord server, people will gladly help you there.
 
-## §4 📦 Gameplay Objects
-Now that you know how to navigate around the editor, let's begin creating something more interesting. And to do that we will start with a gameplay object, because they're the most essential part of gameplay and decorations of any level.
+Make it a great week by being kind to others. New high score, enter your name below.
 
-##### Spinner Attack
-Let's play the the music from the beginning and think of what attack could go here...
+## 📦 Gameplay Objects and Animation
+Now that you know how to navigate around the editor, let's begin creating something more interesting. And to do that we will start with a gameplay object, because they're the most essential part of gameplay and decorations of any level.
+Let's play the music from the beginning and think of what attack could go here...
 
 > *Synth waaaa...wa, wa, waaa~ type sound*
 
-Sounds like something spinning to me, and I think I can visualise a spinner attack that could go here. It looks like an eighth of a circle that is spinning and changing direction to the wawawa sound.
+Sounds like something spinning to me, and I think I can visualise a spinner attack that could go here. It looks like a quarter circle that is spinning and changing direction to the wawawa sound.
 I'll create a new object by clicking on the "Object" button on the control bar. I could also create one with these presets in the little pop-up, but I never find myself actually using it.
 
-**!!!** This part was written without the editor access. Review this section with the editor later!
+Before doing anything else, let me make the shape larger by clicking on the first scale keyframe and changing its values to X 20 Y 20.
 
-Let's go through what all of these options mean together, and change some of them.
+##### Properties rundown
+Let's go through what all of these options mean over at the object properties panel, and change some of them.
 * At the very top above the name we have 6 **colour coding** toggles. These change how objects are coloured on the timeline, purely for editing purposes. The toggles are additive, so if I have the Blue and Red ones on, the colour on the timeline changes to Purple.
-* Next one is the **Name**, which, once again, just changes the label of the object. I'll call it "Spinner circle attack" and you can see the label change to reflect that.
-* The next property is **Object Type**. That's what determines the function of the object. There are three types to choose from:
-	* Hit - The object will hit players on collision, if fully opaque. It is used for obstacles.
+* Next one is the **Name**, which also just changes the label of the object. I'll call it "Spinner circle attack" and you can see the label change to reflect that.
+* The next property is **Type** of the object. That's what determines its function. There are three types to choose from:
+	* Hit - The object will hit players on collision, if fully opaque. It is used for obstacles which is what I want, so I will leave it set to Hit.
 	* No hit - The object will never hit players. It is used for decorations.
-	* and Empty - the object will be invisible. It is used for parenting, which will be discussed in a later video.
-We want this attack to hit the player, so I will leave it set to Hit.
-* Next up we have **Start Time**, which is the same as dragging object's label left or right, but you work with precise time in secounds here.
-* Then comes the **End Time**. This is what tells the game when the object is no longer needed, making it disappear and helping reduce lag. I like changing this last so we will come back to that later.
-* **Parenting** lets this object inherit certain properties of another object. This is a very important and complex subject so it will have its own video in the series.
-* **Gradient
+	* and Empty - the object will be invisible and won't hit players. It is used for parenting, which will be discussed in a later lesson.
+* Next up we have **Start Time**, which is the same as dragging object's label left or right, but you work with precise time in seconds here. I will move the object start to where the wawawa sound starts first.
+* Then comes **End Time**. This is what tells the game when the shape is no longer needed, making it disappear and helping reduce lag. I like changing this last so we will come back to that later.
+* Next we have **Shape**, which presents you with 6 categories of shapes. I wanted to make my attack a quarter circle, so I'll click on a circle category, and choose a shape that looks like a quarter of a circle.
+* Right below you get a choice of 5 **Gradient** types. I will select the radial one. A little drop-down will appear for adjusting the gradient, but I think it already looks good so I won't touch it.
+* **Render Depth** controls whether the shape appears in front of or behind other shapes.
+* **Parenting** lets this object inherit certain properties of another object. It's a very important and complex subject so it will have its own lesson in the series.
+* Scrolling down we're presented with **Editor Layer** and **Editor Bin** properties. These are purely for editing convenience and won't be apparent in the level.
+* Next is **Shape Origin** which controls the centre of the shape. It's useful for rotation and scaling around a certain point in the shape. I'll leave this as defaults.
+* And lastly, **Keyframes Timeline** where you can animate position, scale, rotation, and colour properties of the shape. When you create a new object it has 1 initial keyframe for every line on the timeline, at the very beginning. You can't move or delete these initial keyframes.
 
-\-\-\- Return to End Time \-\-\-
+##### Animation
+I wanted my attack to spin. Let's add a **rotation** keyframe by clicking on empty space in the keyframe timeline with the right mouse button.
 
-\-\-\- old stuff \-\-\-
+Do note that you can only create new keyframes below the dark area that you can see above the timeline. I don't know why that's the case, and it's silly, but it is what it is.
 
-Objects have these properties that I can edit:
-* Name — A name, which is just to help me keep track of the object on the timeline. I can call this one 'Hello PA', and you will see this object's name update there.
-* Colour coding — Six toggles that also help identify objects on the timeline by changing how they appear there. Having multiple of them toggled will mix the colour. I can toggle the Blue and Red empty toggles and you will see the rectangle on the timeline is now purple.
-* Object Type — You can choose from
-	* Hit — The object will hit players on collision, if fully opaque. It is used for obstacles.
-	* No hit — The object will never hit players. It is used for decorations.
-	* and empty — The object will be invisible. It is used for parenting, which will be discussed in a later video.
-Next property is
-* Start Time — Lets me control when the object appears and starts animating, measured in seconds relative to song start. It's the same as moving the object around on the timeline, but you can set a precise time here.
-* End Time — Tells the game when the object is no longer needed, making the object disappear and helping reduce lag. It has the following options:
-	* Last Keyframe — The object will disappear immediately as its last animation keyframe is reached. Animation will be discussed in a separate video.
-	* Last Keyframe + Offset — The object will disappear when the provided amount of time in seconds has passed after its last keyframe. So if this object's animation lasts 5 seconds, and the End Time is set to be Last Keyframe + Offset with the value 3, then the object will disappear 9 seconds after Start Time.
-	* Fixed Time — Disappears the specified number of seconds after the object's Start Time.
-	* Song Time — Disappears the specified number of seconds after the start of the song.
-Next property is
-* Parenting, which will have its own video in the series
-* Gradient — Lets me set the gradient type or disable it for this object. There are 5 options: No gradient, Linear, Linear inverse, Radial, and Radial inverse. If a gradient is selected, colour keyframes for this object will ask for two colours to be chosen instead of one.
-* Shape — Lets me set the shape of th object. It has categories on the top, and a list of shapes from the selected category below. I can click on the circle category and then choose a semmi-circle shape and you will se the shape on the preview update to be a semi-circle.
-* Render Depth — Determines if the object is behind or in front of other objects. Lower values make the object go on top of other objects. If I were to have multiple objects overlapping on top of each other, where the first object is at depth 15, then setting the second object's depth to 14 would make it appear on top, while setting it to 16 would make it appear behind.
-* Origin Point — Determines where the centre of the shape is, I can set it to be on the top-right of the shape, rather than its centre.
-* and lastly, Keyframes timeline — Defines position, scale rotation, and colour properties of the object and allows for animation of those properties. When you create a new object, it has 1 initial keyframe for every line on the timeline, at the very beginning. You can't move or delete these initial keyframes. Animation will be discussed in a future lesson.
+I will change its Rotation value to 360°.
 
-Having so many properties may seem overwhelming at first, but I'm sure you will have no trouble navigating through them with a bit of practice!
+If we play the level you can see the shape slowly rotates full circle at a constant rate. What if I wanted it to start fast and slow down to its new rotation? For that I will change the **Ease Type** of the keyframe. Expanding the drop-down presents us with many easing types to choose from, but I will go with OutSine, which matches my desired rotation rate. You can play around with these and see how they're different from one another.
 
-If I want to delete an object, I can do that by selecting it, and either clicking the little bin icon in the properties panel, or pressing the delete key on my keyboard. You will see the Object Properties panel close and the object disappear both from the timeline and preview.
+I want my attack to change spinning direction to the music, so let's time this keyframe to the end of the first 'wa' sound. I will slow down level playback from the Control Bar to—let's say—0.5 speed, and play the level to see where I should put the keyframe.
 
-### Practice example
-Now let's have a practice example! During practice examples I will be showing you how to use the information we have learned to make something cool.
+Here! I'll drag the keyframe to this position.
 
-Let's make a very simple projectile arrow using two objects.
-I am going to use a triangle shape for the arrow head and a rectangle shape for a shaft.
-- I will go ahead and create the first object by clicking on the 'Object' control bar button.
-	- I now have a new object placed on the timeline. I will drag the timeline scrubber to overlap with the object so I can see what it looks like in the preview. I want to edit this object, so I will select it by clicking on it on the timeline, which brings up the Object Properties panel.
-	- In that panel I will set its name to 'Arrow Head', which will help me identify what this object is in the future.
-	- I am leaving the object type set to "Hit", so that it hits the player.
-	- I should also make the object last longer, let's say 10 seconds. I will do that by setting the End Time value to 10. Notice that the object now appears longer on the timeline.
-	- I want this object to be a triangle so I will change its shape by selecting the triangle category and then picking the triangle shape. You can see that change reflected on the preview.
-	- At the moment the shape is very difficult to see due to its small size. Let's change that! To do so I must select the initial scale keyframe by clicking on it. It is marked as a small white diamond at the start of the scale keyframe timeline. Now that I have it selected, I will move over to the Scale Keyframe Editor above and set the X an Y values to be 5 units. Now the shape appears bigger in the preview. Don't worry much about keyframes yet, we will learn more about them in a later video.
-	- Now, the triangle is pointing up, but I was imagining the arrow pointing left. I will rotate the triangle. For that I must select the initial rotation keyframe by clicking on it and then setting the rotation value to be -90 degrees.
-- I think I'm done editing the 'Arrow Head' object, so I will create the next on—click on the 'Object' control bar button.
-	- To edit the newly created object I select it by clicking on it.
-	- In the Object Properties panel I will change this object's name to 'Arrow Shaft', leave the object type set to 'Hit', and change the End Time value to be 10 seconds.
-	- I will change this shape's size by selecting the initial scale keyframe, and changing its values to be X 15 Y 2 units. As you can see in the preview the shape appears wide.
-	- Currently the rectangle is on top of the triangle and they do not look like an arrow. I will align the rectangle by selecting the initial move keyframe, and changing its X in the positive direction, until it's aligned with the triangle in such a way that they form an arrow.
-	- For convenience I will move this object down to the next line on the timeline by holding shift and clicking and dragging it down one line. Now objects don't appear to overlap one another on the timeline.
-	I want both of the objects to appear and disappear at the same time. I can do that by clicking and dragging an object until their start is aligned.
-		- If I wanted to do this more precisely, I could also select one of the objects, copy its Start Time property value, select the other object, and paste the value into its Start Time property.
-	- Now if I drag the timeline scrubber back before the objects, and start playing the lever, you can see both of them appear and disappear at the same time.
-Here it is! We made a simple arrow with two shapes!
-Unfortunately, the arrow will remain static for now, but don't worry, we will definitely learn how to make it move in a future lesson.
+I will create a new rotation keyframe and set it to spin in the opposite direction by setting it's value to -700°, and time it to the end of the next 'wa' sound. Then another one, spinning 800°, also timed, and the last one, set to -1000°.
 
-## §5 🏃 Animation
-Animation in Project Arrhythmia is what makes certain properties change over time. This is done using snippets of data called **keyframes**.
+Let's reset the speed to 1.0 and play the level from the beginning... Isn't this amazing?
 
-In Project Arrhythmia it is only possible to animate:
-* Position, scale, rotation, and colour of objects,
-* and Effects in the Effects & Checkpoints tab, which will be discussed in a future lesson.
+I don't like how my attack just suddenly pops in, does it's thing, and suddenly disappears. Let's add a fade in and fade out for this attack.
 
-I will create a new object to demonstrate how animation works. At the bottom of this object's properties panel you can see four coloured tracks labelled "Move", "Scale", "Rotation", and "Colour"—this is where I can animate this object. You can see that at the beginning of every track there is a little diamond shape—this is a **keyframe**.
+Colour keyframes define main colour, gradient fade colour, and opacity of the shape. I will select the initial colour keyframe and change its opacity to 0%, then create a second colour keyframe with opacity set to 100%. This fade in also serves a second purpose, because the attack will only hit the player when the opacity is at 100%, so players have time to react to this attack.
 
-Each keyframe holds a value. I can select the keyframe on the track labelle 'Rotate' and the editor will show me what value it holds in the keyframe editor at the top right. I can change that value to 20, and you can see this change beig reflected on the preview—the object is now rotated 20° counter-clockwise. I can select the keyframe on the track labelled 'Move', and I'll be presented with X and Y values for this keyframe. I can edit the value X to be 10 and you will see object's position is now 10 editor units to the right of where it was before.
-Note that in Project Arrhythmia positX is right, and positive Y is up.
+To create a fade out I will create another keyframe where I want the fade out to begin, and leave opacity at 100%. Doing so give this object time to stay fully opaque between the keyframes. I will then create a keyframe where I want the fade out to finish, and set its opacity to 0%.
 
-So, I changed the rotation and position of the object, but it is still not animated. That is because I only have one keyframe at the start of the tracks, and there is nothing to transition between.
+Now the attack looks like this. *(plays level)*
 
-Let's say I wanted my object to transition from right to left on the screen. I already have the first keyframe represent the position on the right, so I will create a new keyframe after the first one that will represent the position on the left. I do that by clicking with the right mouse button on the empty space of the 'Move' track, which makes a new keyframe appear behind the mouse pointer. I can click on it to select it and you will see the values it holds are the same as the first keyframe. To make it represent a position on the left I will change the X value to be -10. Now I have two keyframes for two positions on the screen—first right and then left.
-If I play the level you can see the object move from right to left. How quickly the object transitions depends on the time between keyframes. I can change the second keyframe's position in time by either holding and dragging it on the track, or by selecting it and changing its Time to be later. As you can see the Time value for keyframes is represented by keyframe ticks, where 60 ticks is one second. You can see a little hint above the text field that shows how long the provided time is in seconds.
-If I position the second keyframe to be at 90 ticks, which is a second and a half, after the first one, the transition between those keyframes will take a second and a half.
+##### Randomisation
+I will change its first position keyframe to appear somewhere else other than the middle-centre, but I will do something clever here and make the position random! For that I will select initial position keyframe and turn on **Linear** randomise type. Now instead of providing just the X and Y coordinates I can provide ranges.
 
-I can also change how the transition to a keyframe is animated with the Ease Type dropdown. Linear ease means the object will moveat a constant speed the entire transition, while Insteant easemakes the object immediately switch to the new values. There are many more available and you are free to explore how those ease types look.
+I want the random range to include most of the screen. To quickly get needed coordinates I can toggle the **Grid** by navigating over to the Menu Bar, View, and choosing "Toggle Grid". As well as showing the grid lines, the editor now shows coordinates of the position my cursor is hovering over, in the top-right corner of the preview.
 
-Remember that every object has a keyframe at the beginning of every animation track? Those are **Initial Keyframes** and you cannot delete them or change their time.
+I'll hover over the bottom-left edge of the preview and put the coordinates as X and Y minimums of the keyframe. X-min -47 and Y-min -24. For X-max and Y-max I will put the coordinates of the top-right corner of the preview. X-max 47 and Y-max 24.
 
-Exclusively to position, scale, and rotation keyframes, you will see an additional property for each keyframe, which is **randomisation type**. This will be discussed very shortly.
+Every time a player starts my level this shape will appear at a different location on the screen. I can quickly preview a different randomisation possibility by having the object selected and performing Ctrl + R re-randomisation shortcut.
 
-Lastly, colour keyframes are a bit different from position, scale, and rotation keyframes. They do not allow for randomisation and have these values:
-* **Colour** from the 'Objects' palette of the current theme. Themes will be discussed in a later lesson.
-* **Gradient colour**, only if the object has a gradient enabled. If the colour of the gradient set to be the same as the first colour, then the gradient colour becaomes transparent.
-* And **opacity**. Objects that aren't fully opaque will never hit players.
+Before moving on I want to quickly explain other randomisation types.
+* Linear type picks any position in the provided ranges and **Randomise Interval** will round the rolled value to the nearest provided multiple.
+* Toggle type—"this-or-that" so to speak—will only pick between two positions provided.
+* and Relative type will pick a number in the provided multiplier range, rounding it to the nearest multiple of **Randomise Interval** value, and multiplying both position X and Y with that value.
 
-Keyframes have these properties that you can edit:
-* Time — time of the keyframe, in ticks, where 60 ticks is one second
-* Ease type — determines what easing method to use to interpolate between two keyframes
-Transformation keyframes include these properties:
-* Randomisation type — determines what type of randomisation to use, or none. Those will be explained in a moment.
-* X and Y components — determines the position, scale, or rotation components to interpolate into. Position and scale are measured in units, while rotation is measured in degrees
-Colour keyframes include these properties:
-* Colour — which colour from 'Objects' palette in the current theme to use. Themes will be discussed in a later video in this series.
-* Gradient colour — similar to the first colour. Only available for objects that have gradients enabled. If the selected gradient colour matches first colour, then the gradient colour becomes transparent.
-* Opacity — controls opacity of the object, where 100 is fully opaque and 0 is fully transparent. Objects that aren't fully opaque will never hit players
+##### End Time
+I think I am finished with this attack. Remember I mentioned End Time property earlier? This property helps the game know when to remove the shape to optimise the level.
 
-### Randomisation
-Randomisation makes the keyframes take random values every time the level is played.
-There are 4 randomisation options:
-* None — X and Y components act as normal
-* Linear — uniform distribution. The game picks a random value between the "Min" and "Max" fields
-* Toggle — "this-or-that", so to speak. The game picks either a "Min" or a "Max" field value
-* Relative — or how I would call it "Multiplier" random. The game picks a random value between the "Min" and "Max" fields and multiplies both X and Y components by that number
-Linear and Relative randomisation options have an additional Randmoise Interval field. If that field isn't zero, the random values are rounded to the nearest multiple of that interval value.
-In the editor, you can re-roll the randomisation values by reloading the object using the Ctrl + R shortcut.
+It has 4 options:
+* Last Keyframe will make the shape disappear immediately after its animation ends.
+* Last Keyframe Offset is the same, but lets you specify a delay in seconds.
+* Fixed Time will make the shape disappear the specified amount of seconds after its start,
+* and Song Time will make it disappear when a specified amount of time into the song is reached. If the object starts after this time then the shape will never appear.
 
-### Practice example
-- Let's make our triangle appear by expanding out of nowhere. For that I'll create a new Scale keyframe here, by right clicking.
-- I'll make the scale of the first keyframe (0, 0), and the scale of the second one (15, 15).
-- Don't forget that you can move the scrubber within the animation timeline to change your current preview time.
-- Now we have an animation like this.
-- Let's change the ease type to use OutElastic. Now it's animated like this.
-- Let's add a rotation keyframe, and make it rotate 360° with OutSine ease type.
-- I will set this rotation keyframe's time to be the same as the last Scale keyframe so that the animation is synchronised.
-- Now, let's give it a random position on the screen.
-- I do that by selecting the first Position keyframe, and turning on Linear randomisation type.
-- Let's say I want it to take a random position within the range of (-50, 50) for X and (0, 30) for Y.
-  [[Demonstrate on video while narrating]]
-- Now the triangle should only appear on the top half of the screen! You can preview different random positions by doing the Ctrl + R shortcut. [[Use it multiple times on video]]
-- Now we can make it fade out after a few seconds by creating a colour keyframe here without changing any properties, so that the object stays the same colour through the first sequence.
-- And another keyframe here, and setting its opacity to 0.
-- And now we have an animation like this.
-- Let's tell the game that we do not need this object anymore after the last keyframe by setting the End Time to be LastKF. While it didn't change anything visually, the game now knows when to offload the object for better performance in the level.
-And now we have a very simple attack with a triangle that appears at a random location on the top half of the screen with a nice animation and fades out.
+I don't need this object after its animation ends, so I will select Last Keyframe.
+
+##### Multiple objects
+Let's reuse this attack for the rest of the wawawa sounds in this section. I will duplicate this object by having it selected and using Ctrl + D duplication shortcut, and then dragging its label over to where the next set of wawawa sounds starts. Don't forget to check whether the attack is still synchronised with music by quickly playing the level.
+
+I will duplicate this object again but keep its start position the same to make players dodge two attacks at once.
+
+I will do the same for the next set of sounds with even more attacks appearing simultaneously, continuing this pattern to the end of this section.
+
+Let's move back to the beginning play-test the level. For that I will hover over the **Play Testing** button at the end of the Control Bar and press "Normal". *(Plays the level)*
+
+Splendid! I can leave play testing mode by hitting Escape and save my level.
+
+##### Conclusion
+This concludes this lesson on Gameplay Objects and Animation. We went over important topics like what gameplay objects are, their properties, animation keyframes, keyframe easings, and randomisation.
+
+Don't forget that if you feel overwhelmed you're not alone. The learning curve for the editor looks like the icon for OutCirc easing, and you're slowly getting over the initial struggle. As always, feel free rewatch this video if you have any problems, don't forget to ask for help in the comments, Steam Discussion forums, or in the official Project Arrhythmia Discord server, people will gladly help you there.
+
+Make it a great week by being kind to others. New high score, enter your name below.
+
+## 🛅 Parenting & Prefabs
+Prefabs 
+
 
 ## §6 🛅 Prefabs (Older)
 Prefabs allow for organisation and reusability of groups of objects. Prefabs are very useful—do not underestimate prefabs.
@@ -448,7 +403,7 @@ To edit a parallax object you must select it by clicking on it in the preivew. Y
 Deletion of parallax object is done by selecting the object and using the deletion shortcut.
 Unfortunately, this is the only way to delete parallax objects at the moment.
 
-Parallax objects have some Events associated with them thta will be covered in a separate video in the series.
+Parallax objects have some Events associated with them that will be covered in a separate video in the series.
 
 ## §12 🎚 Miscellaneous Tools & Settings
 [[SCREENSHOT]]
@@ -477,6 +432,7 @@ highest score! enter your name:
 higher score! enter your name:
 
 <<TODO: also go over previously made attacks, adding style to them, explaining warning times, their styles, speed, and sync to music>>
+	<<TODO: Bomb attack from Parenting and Prefabs have edge cases where you might see shrapnel not reach the end of the screen and disappear>>
 <<TODO: mention different aspect ratios players may be playing on and how levels are affected>>
 <<TODO: mention bitrate of level recordings and Grain effect>>
 <<TODO: explain or link to a resource on basics of animation>>

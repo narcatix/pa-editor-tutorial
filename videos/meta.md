@@ -1,15 +1,13 @@
 ## ⚙ Video Meta
-Main title is `PA Editor Explained`
-| Append to Title                     | Thumbnail Text                    | Included Chapters |
-|-------------------------------------|-----------------------------------|-------------------|
-| #1 \| Getting Started               | It's not scary                    | 1-3               |
-| #2 \| Objects                       | Everything about objects          | 4                 |
-| #3 \| Animation and Random          | Keyframes                         | 5                 |
-| #4 \| Prefabs                       | Prefabs and Quick Spawn           | 6                 |
-| \| Break time                       | Touching grass                    | 7                 |
-| #5 \| Parenting                     | Object parenting                  | 8                 |
-| #6 \| Effects & Checkpoints         | Make your level shine             | 9                 |
-| #7 \| Themes & Parallax             | More colours                      | 10                |
+| Title                                              | Thumbnail Text                    |
+|----------------------------------------------------|-----------------------------------|
+| 👋 Getting Started • PA Editor Course              | Editor tutorial                   |
+| 📦 Objects & Animation • PA Editor Course          | Basics                            |
+| 🛅 Parenting & Prefabs • PA Editor Course          | Attacks get more complex          |
+| 😌 Break time • PA Editor Course                   | Touching grass                    |
+| 🎨 Themes & Effects • PA Editor Course             | Make your level shine             |
+| ✨ Parallax & Miscellaneous • PA Editor Course     | Parallax objects and other tools  |
+| 🥸 Designing Characters • PA Editor Course         | Level Boss                        |
 
 ## ⚠ Fully Outdated Notice
 Every video should include this in the beginning and have it cut using the YouTube Studio editor.
