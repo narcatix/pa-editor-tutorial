@@ -33,7 +33,7 @@ You will be asked to fill in a few fields with information about the song and yo
 * The **Song Artist** is "Xtrullor".
 * Audio file location — here you click Browse and choose the song file. Sphero.mp3. Now, you *can* use files of .ogg, .mp3, and .wav audio formats, but they will all be transcoded into .ogg at the end of the day. Also do note that the editor is a bit quirky with some .mp3 files and might not create the project properly, in which case you'll have to use a different file format.
 * Level artwork — this is where you select a level icon. The icon should be a .jpg image no bigger than 512 pixels squared. I will leave it blank for now, you can always set it later.
-* Level background setup lets you create a level with a preset of backgrounds which are purely visual. I will select "City" because I think it's pretty.
+* Level background setup lets you create a level with a background preset. I will select "City" because I think it's pretty.
 
 Click the "Create new level" button. And a new empty project is created. Let's pause the playback, and welcome to the editor!
 
@@ -57,12 +57,12 @@ Some properties like position, scale, rotation, and colour have their own animat
 By the way, don't worry about all the other properties yet. In this video I'm only going over the main interface of the editor.
 
 ##### Timeline
-Next thing I'm gonna show you is the **Timeline** that spans the entire bottom half of the editor. The timeline is where we can see the representation of all the gameplay objects in the level placed at specific points in time, shown as **Object Labels**, which we only have one of right now. I can click on a label in this window and that will select the object just like clicking on its shape in the Level Preview did.
+Next thing I'm gonna show you is the **Timeline** that spans the entire bottom half of the editor. The timeline is where we can see a representation of all of the gameplay objects in the level placed at specific points in time, shown as **Object Labels**, which we only have one of right now. I can click on a label in this window and that will select the object just like clicking on its shape in the Level Preview did.
 
 If I click play on the Control Bar you will see the blue handle starts moving to the right, indicating that the time is advancing. We call this blue handle a "Scrubber". By the way, the shortcut to play or pause the level is Spacebar.
 
 The length of the label on the timeline represents how long the object appears on the screen for. If the scrubber is on top of a label, that means that object exists at the current time. I can change the time of appearance by dragging the label around the timeline.
-I can hold shift while dragging to move the label up and down, but it doesn't change anything about the actual level, just makes it easier to organise your labels later on.
+I can hold shift while dragging to move the label up or down, but it doesn't change anything about the actual level, just makes it easier to organise your labels later on.
 
 ##### Property Editor (Keyframes)
 Now, let's come back to the four special properties of gameplay objects. Did you notice that our object has an animation where it slowly moves to the right? So why is that? If I select the object and look at its animation timeline... *aaAAaah*... There we have a line labelled "Move" with two funny diamond shapes on it. These diamonds are what we call "Keyframes" and they define specific values to transition between.
@@ -97,7 +97,7 @@ Lastly, I just want to say that if you find any of this very difficult—don't w
 
 Make it a great week by being kind to others. New high score, enter your name below.
 
-## 📦 Gameplay Objects and Animation
+## 📦 Gameplay Objects & Animation
 Now that you know how to navigate around the editor, let's begin creating something more interesting. And to do that we will start with a gameplay object, because they're the most essential part of gameplay and decorations of any level.
 Let's play the music from the beginning and think of what attack could go here...
 
